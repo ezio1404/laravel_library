@@ -14,7 +14,7 @@ class AuthorsController extends Controller
     public function validatedRequest(){
         return request()->validate([
             'name'=>'required',
-            'dob'=>''
+            'dob'=>'required'
         ]);
     }
 }
